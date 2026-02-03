@@ -76,7 +76,7 @@ export const Portfolio = () => {
             </h3>
           </div>
           <p className="max-w-xs text-right text-gray-500 font-mono text-[10px] uppercase tracking-[0.2em] leading-loose">
-            * Các dự án chọn lọc từ 2014 - 2024. Tất cả công trình được thực hiện với độ chính xác cơ khí và tác động thị giác tối ưu.
+            * Các dự án chọn lọc từ 2014 - {new Date().getFullYear()}. Tất cả công trình được thực hiện với độ chính xác cơ khí và tác động thị giác tối ưu.
           </p>
         </div>
 

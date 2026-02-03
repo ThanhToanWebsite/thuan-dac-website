@@ -64,7 +64,7 @@ export const Products = () => {
             className="flex items-center gap-4 mb-6"
           >
             <div className="w-12 h-[2px] bg-cyan-500"></div>
-            <span className="text-cyan-400 font-mono tracking-[0.5em] uppercase text-xs">Danh Mục 2024</span>
+            <span className="text-cyan-400 font-mono tracking-[0.5em] uppercase text-xs">Danh Mục {new Date().getFullYear()}</span>
           </motion.div>
 
           <div className="flex flex-col md:flex-row justify-between items-end gap-8">

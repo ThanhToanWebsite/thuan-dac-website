@@ -70,10 +70,10 @@ export const Contact = () => {
                     Email
                   </h4>
                   <a
-                    href="mailto:contact@quangcaoinannoithatcantho.com"
+                    href="mailto:thuandac@quangcaoinannoithatcantho.com"
                     className="text-foreground/60 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
                   >
-                    contact@quangcaoinannoithatcantho.com
+                    thuandac@quangcaoinannoithatcantho.com
                   </a>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export const Contact = () => {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 bg-white/50 dark:bg-slate-900/80 rounded-lg border-2 border-cyan-500/30 focus:border-cyan-500 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] outline-none transition-all placeholder:text-muted-foreground text-foreground backdrop-blur-sm"
+                    className="w-full px-4 py-3 bg-background dark:bg-slate-900/80 rounded-lg border-2 border-cyan-500/30 focus:border-cyan-500 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] outline-none transition-all placeholder:text-muted-foreground text-foreground backdrop-blur-sm"
                     placeholder="Nguyễn Văn A"
                   />
                 </div>
@@ -130,7 +130,7 @@ export const Contact = () => {
                   <input
                     type="tel"
                     id="phone"
-                    className="w-full px-4 py-3 bg-white/50 dark:bg-slate-900/80 rounded-lg border-2 border-purple-500/30 focus:border-purple-500 focus:shadow-[0_0_20px_rgba(168,85,247,0.4)] outline-none transition-all placeholder:text-muted-foreground text-foreground backdrop-blur-sm"
+                    className="w-full px-4 py-3 bg-background dark:bg-slate-900/80 rounded-lg border-2 border-purple-500/30 focus:border-purple-500 focus:shadow-[0_0_20px_rgba(168,85,247,0.4)] outline-none transition-all placeholder:text-muted-foreground text-foreground backdrop-blur-sm"
                     placeholder="09xx xxx xxx"
                   />
                 </div>
@@ -145,7 +145,7 @@ export const Contact = () => {
                 </label>
                 <select
                   id="service"
-                  className="w-full px-4 py-3 bg-white/50 dark:bg-slate-900/80 rounded-lg border-2 border-green-500/30 focus:border-green-500 focus:shadow-[0_0_20px_rgba(34,197,94,0.4)] outline-none transition-all text-foreground backdrop-blur-sm"
+                  className="w-full px-4 py-3 bg-background dark:bg-slate-900/80 rounded-lg border-2 border-green-500/30 focus:border-green-500 focus:shadow-[0_0_20px_rgba(34,197,94,0.4)] outline-none transition-all text-foreground backdrop-blur-sm"
                 >
                   <option
                     value=""
@@ -187,7 +187,7 @@ export const Contact = () => {
                 <textarea
                   id="message"
                   rows={4}
-                  className="w-full px-4 py-3 bg-white/50 dark:bg-slate-900/80 rounded-lg border-2 border-red-500/30 focus:border-red-500 focus:shadow-[0_0_20px_rgba(239,68,68,0.4)] outline-none transition-all placeholder:text-muted-foreground text-foreground backdrop-blur-sm"
+                  className="w-full px-4 py-3 bg-background dark:bg-slate-900/80 rounded-lg border-2 border-red-500/30 focus:border-red-500 focus:shadow-[0_0_20px_rgba(239,68,68,0.4)] outline-none transition-all placeholder:text-muted-foreground text-foreground backdrop-blur-sm"
                   placeholder="Tôi cần tư vấn về..."
                 ></textarea>
               </div>

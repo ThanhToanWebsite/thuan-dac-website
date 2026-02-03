@@ -68,14 +68,14 @@ export const Portfolio = () => {
               <span className="w-12 h-[2px] bg-purple-500"></span>
               <span className="text-purple-400 font-mono tracking-[0.5em] uppercase text-xs">DI SẢN DỰ ÁN</span>
             </div>
-            <h3 className="text-5xl md:text-7xl font-black text-white uppercase leading-tight tracking-tighter">
+            <h3 className="text-5xl md:text-7xl font-black text-foreground dark:text-white uppercase leading-tight tracking-tighter">
               Công Trình <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 drop-shadow-[0_0_20px_rgba(168,85,247,0.3)]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-500 drop-shadow-[0_0_20px_rgba(168,85,247,0.2)] dark:drop-shadow-[0_0_20px_rgba(168,85,247,0.3)]">
                 Tiêu Biểu
               </span>
             </h3>
           </div>
-          <p className="max-w-xs text-right text-gray-500 font-mono text-[10px] uppercase tracking-[0.2em] leading-loose">
+          <p className="max-w-xs text-right text-muted-foreground font-mono text-[10px] uppercase tracking-[0.2em] leading-loose">
             * Các dự án chọn lọc từ 2014 - {new Date().getFullYear()}. Tất cả công trình được thực hiện với độ chính xác cơ khí và tác động thị giác tối ưu.
           </p>
         </div>
@@ -90,7 +90,7 @@ export const Portfolio = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`cursor-pointer group relative rounded-[2rem] overflow-hidden border border-white/10 bg-black/40 backdrop-blur-md hover:border-purple-500/50 transition-all duration-500 
+              className={`cursor-pointer group relative rounded-[2rem] overflow-hidden border border-foreground/10 dark:border-white/10 bg-background dark:bg-black/40 backdrop-blur-md hover:border-purple-500/50 transition-all duration-500 
                 ${index === 0 ? "md:row-span-2 md:col-span-1" : ""}
                 ${index === 3 ? "md:col-span-2" : ""}
               `}
@@ -103,8 +103,8 @@ export const Portfolio = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity">
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="h-[1px] w-6 bg-purple-500" />
-                    <span className="text-[10px] font-mono text-purple-400 uppercase tracking-widest">
+                    <span className="h-[1px] w-6 bg-purple-600 dark:bg-purple-500" />
+                    <span className="text-[10px] font-mono text-purple-600 dark:text-purple-400 uppercase tracking-widest">
                       {project.category}
                     </span>
                   </div>

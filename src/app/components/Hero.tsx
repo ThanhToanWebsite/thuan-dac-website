@@ -12,7 +12,7 @@ export const Hero = () => {
         <img
           src={officeImg}
           alt="Creative Workspace"
-          className="w-full h-full object-contain filter brightness-50 dark:brightness-40 opacity-60"
+          className="w-full h-full object-contain filter brightness-50 dark:brightness-40 opacity-80 dark:opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/10" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-500/10 via-black/60 to-black" />
@@ -29,17 +29,17 @@ export const Hero = () => {
             transition={{ duration: 1 }}
           >
             {/* Industrial Badge */}
-            <div className="inline-flex items-center gap-3 py-2 px-6 rounded-none border-l-4 border-cyan-500 bg-black/40 backdrop-blur-md mb-12">
-              <span className="text-cyan-400 text-sm font-mono tracking-[0.3em] uppercase">Est. 2014 Cần Thơ</span>
+            <div className="inline-flex items-center gap-3 py-2 px-6 rounded-none border-l-4 border-cyan-600 dark:border-cyan-500 bg-white/10 dark:bg-black/40 backdrop-blur-md mb-12">
+              <span className="text-cyan-700 dark:text-cyan-400 text-sm font-mono tracking-[0.3em] uppercase">Est. 2014 Cần Thơ</span>
             </div>
 
-            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black text-white leading-[0.85] tracking-tighter mb-10">
-              <span className="block drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]">THUẬN ĐẮC</span>
-              <span className="block text-cyan-400 drop-shadow-[0_0_30px_rgba(34,211,238,0.5)]">QUẢNG CÁO</span>
+            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black text-foreground dark:text-white leading-[0.85] tracking-tighter mb-10">
+              <span className="block drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] dark:drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]">THUẬN ĐẮC</span>
+              <span className="block text-cyan-600 dark:text-cyan-400 drop-shadow-[0_0_30px_rgba(8,145,178,0.3)] dark:drop-shadow-[0_0_30px_rgba(34,211,238,0.5)]">QUẢNG CÁO</span>
             </h1>
 
-            <p className="text-xl text-gray-200 mb-12 max-w-2xl leading-relaxed font-normal border-l-2 border-cyan-500/50 pl-6 ml-2 drop-shadow-[0_2px_5px_rgba(0,0,0,1)]">
-              Chuyên gia <span className="text-cyan-400 font-bold">Quảng Cáo LED</span> & <span className="text-purple-400 font-bold">Nội Thất</span>.
+            <p className="text-xl text-foreground dark:text-gray-200 mb-12 max-w-2xl leading-relaxed font-normal border-l-2 border-cyan-600/50 dark:border-cyan-500/50 pl-6 ml-2 drop-shadow-[0_2px_5px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_2px_5px_rgba(0,0,0,1)]">
+              Chuyên gia <span className="text-cyan-700 dark:text-cyan-400 font-bold">Quảng Cáo LED</span> & <span className="text-purple-700 dark:text-purple-400 font-bold">Nội Thất</span>.
               Công nghệ hiện đại cho những ý tưởng không giới hạn.
             </p>
 
@@ -94,21 +94,21 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.5 }}
-              className="absolute bottom-0 right-10 w-[200px] bg-black/80 backdrop-blur-xl border border-cyan-500/30 rounded-2xl p-5 shadow-[0_0_50px_rgba(6,182,212,0.3)] z-40"
+              className="absolute bottom-0 right-10 w-[200px] bg-background dark:bg-black/80 backdrop-blur-xl border border-cyan-500/30 rounded-2xl p-5 shadow-[0_0_50px_rgba(6,182,212,0.3)] z-40"
             >
               <div className="flex items-center gap-3 mb-4">
                 <img src={logoImg} alt="Logo" className="w-8 h-8 object-contain" />
-                <div className="h-4 w-[1px] bg-white/20"></div>
-                <span className="text-white font-black text-lg tracking-tighter">Thuận Đắc</span>
+                <div className="h-4 w-[1px] bg-foreground/20 dark:white/20"></div>
+                <span className="text-foreground dark:text-white font-black text-lg tracking-tighter">Thuận Đắc</span>
               </div>
               <div className="space-y-3">
                 <div>
-                  <p className="text-cyan-400 font-black text-xl leading-none">100+</p>
-                  <p className="text-gray-400 text-[8px] uppercase font-bold tracking-widest">Dự án hoàn thành</p>
+                  <p className="text-cyan-600 dark:text-cyan-400 font-black text-xl leading-none">100+</p>
+                  <p className="text-muted-foreground dark:text-gray-400 text-[8px] uppercase font-bold tracking-widest">Dự án hoàn thành</p>
                 </div>
                 <div>
-                  <p className="text-purple-400 font-black text-xl leading-none">10+</p>
-                  <p className="text-gray-400 text-[8px] uppercase font-bold tracking-widest">Năm kinh nghiệm</p>
+                  <p className="text-purple-600 dark:text-purple-400 font-black text-xl leading-none">10+</p>
+                  <p className="text-muted-foreground dark:text-gray-400 text-[8px] uppercase font-bold tracking-widest">Năm kinh nghiệm</p>
                 </div>
               </div>
             </motion.div>

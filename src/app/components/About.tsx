@@ -21,7 +21,7 @@ export const About = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative p-4 border border-white/10 rounded-[3rem] bg-white/5 backdrop-blur-sm"
+              className="relative p-4 border border-foreground/10 dark:border-white/10 rounded-[3rem] bg-foreground/5 dark:bg-white/5 backdrop-blur-sm"
             >
               {/* Decorative Brackets */}
               <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-cyan-500 rounded-tl-[3rem] -translate-x-2 -translate-y-2" />
@@ -41,10 +41,10 @@ export const About = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="absolute -bottom-8 -right-8 bg-black/80 backdrop-blur-2xl border border-cyan-500/50 p-10 rounded-3xl shadow-[0_0_50px_rgba(6,182,212,0.3)] z-20"
+              className="absolute -bottom-8 -right-8 bg-background dark:bg-black/80 backdrop-blur-2xl border border-cyan-500/50 p-10 rounded-3xl shadow-[0_0_50px_rgba(6,182,212,0.3)] z-20"
             >
-              <p className="text-6xl font-black text-white leading-none mb-2">10+</p>
-              <p className="text-cyan-400 font-mono tracking-[0.3em] uppercase text-[10px] font-bold">Năm Kinh Nghiệm</p>
+              <p className="text-6xl font-black text-foreground dark:text-white leading-none mb-2">10+</p>
+              <p className="text-cyan-600 dark:text-cyan-400 font-mono tracking-[0.3em] uppercase text-[10px] font-bold">Năm Kinh Nghiệm</p>
             </motion.div>
           </div>
 
@@ -60,25 +60,29 @@ export const About = () => {
                 <span className="text-cyan-400 font-mono tracking-[0.4em] uppercase text-xs">Từ năm 2014</span>
               </div>
 
-              <h3 className="text-4xl md:text-6xl font-black text-white mb-8 uppercase leading-[0.9] tracking-tighter">
-                Giá Trị <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Thương Hiệu</span> <br />
-                Đến Từ Tâm Huyết
+              <h3 className="text-4xl sm:text-5xl md:text-6xl font-black text-foreground dark:text-white mb-8 uppercase leading-[1.1] tracking-tighter">
+                <span className="block whitespace-nowrap">
+                  Giá Trị <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-500">Thương Hiệu</span>
+                </span>
+                <span className="block whitespace-nowrap">
+                  Đến Từ Tâm Huyết
+                </span>
               </h3>
 
-              <p className="text-lg text-gray-400 mb-12 leading-relaxed font-medium">
-                Khởi đầu từ năm 2014, <strong className="text-white">Thuận Đắc</strong> đã không ngừng cải tiến công nghệ để trở thành đối tác tin cậy hàng đầu trong lĩnh vực Quảng Cáo và Nội Thất tại Cần Thơ.
+              <p className="text-lg text-muted-foreground mb-12 leading-relaxed font-medium">
+                Khởi đầu từ năm 2014, <strong className="text-foreground dark:text-white">Thuận Đắc</strong> đã không ngừng cải tiến công nghệ để trở thành đối tác tin cậy hàng đầu trong lĩnh vực Quảng Cáo và Nội Thất tại Cần Thơ.
               </p>
 
               {/* Technical Specs Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 {stats.map((stat, index) => (
-                  <div key={index} className="flex gap-5 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-all group">
-                    <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-all">
+                  <div key={index} className="flex gap-5 p-6 rounded-2xl bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10 hover:border-cyan-500/30 transition-all group">
+                    <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-600 dark:text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black dark:group-hover:text-black transition-all">
                       {stat.icon}
                     </div>
                     <div>
-                      <h4 className="text-white font-bold text-sm mb-1 uppercase tracking-tight">{stat.label}</h4>
-                      <p className="text-gray-500 text-xs leading-relaxed">{stat.text}</p>
+                      <h4 className="text-foreground dark:text-white font-bold text-sm mb-1 uppercase tracking-tight">{stat.label}</h4>
+                      <p className="text-muted-foreground text-xs leading-relaxed">{stat.text}</p>
                     </div>
                   </div>
                 ))}

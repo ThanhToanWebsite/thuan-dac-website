@@ -28,7 +28,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <p className="text-lg font-medium text-gray-500 max-w-md leading-relaxed mb-10">
+            <p className="text-lg font-medium text-gray-400 dark:text-gray-500 max-w-md leading-relaxed mb-10">
               Tiên phong trong giải pháp cơ khí quảng cáo và nội thất sáng tạo. Chúng tôi vận hành với tư duy kỹ thuật chính xác và tầm nhìn nghệ thuật đột phá.
             </p>
 
@@ -60,7 +60,7 @@ export const Footer = () => {
               <ul className="space-y-4">
                 {["Thiết kế Bảng hiệu", "In ấn Kỹ thuật số", "Thi công Alu", "Sản xuất Nội thất"].map(item => (
                   <li key={item}>
-                    <a href="#" className="font-bold text-sm text-gray-500 hover:text-white transition-colors flex items-center gap-2 group">
+                    <a href="#" className="font-bold text-sm text-gray-400 dark:text-gray-500 hover:text-white transition-colors flex items-center gap-2 group">
                       <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
                       {item}
                     </a>

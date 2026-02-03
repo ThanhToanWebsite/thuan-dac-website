@@ -51,8 +51,8 @@ export const Products = () => {
   return (
     <section id="products" className="py-32 bg-background relative overflow-hidden">
       {/* Decorative background text */}
-      <div className="absolute top-0 right-0 text-[10rem] md:text-[15rem] font-black text-white/[0.02] select-none pointer-events-none leading-none -translate-y-1/4 uppercase">
-        SẢN PHẨM
+      <div className="absolute top-35 right-0 text-[10rem] md:text-[15rem] font-black text-foreground/[0.03] dark:text-white/[0.02] select-none pointer-events-none leading-none -translate-y-1/4 uppercase">
+        THUẬN ĐẮC
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -63,18 +63,18 @@ export const Products = () => {
             viewport={{ once: true }}
             className="flex items-center gap-4 mb-6"
           >
-            <div className="w-12 h-[2px] bg-cyan-500"></div>
-            <span className="text-cyan-400 font-mono tracking-[0.5em] uppercase text-xs">Danh Mục {new Date().getFullYear()}</span>
+            <div className="w-12 h-[2px] bg-cyan-600 dark:bg-cyan-500"></div>
+            <span className="text-cyan-700 dark:text-cyan-400 font-mono tracking-[0.5em] uppercase text-xs">Danh Mục {new Date().getFullYear()}</span>
           </motion.div>
 
           <div className="flex flex-col md:flex-row justify-between items-end gap-8">
-            <h3 className="text-5xl md:text-7xl font-black text-white uppercase leading-tight tracking-tighter">
+            <h3 className="text-5xl md:text-7xl font-black text-foreground dark:text-white uppercase leading-tight tracking-tighter">
               Giải Pháp <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-[0_0_20px_rgba(34,211,238,0.3)]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-500 drop-shadow-[0_0_20px_rgba(8,145,178,0.2)] dark:drop-shadow-[0_0_20px_rgba(34,211,238,0.3)]">
                 Đột Phá
               </span>
             </h3>
-            <p className="max-w-md text-gray-400 font-medium leading-relaxed border-l-2 border-white/10 pl-8">
+            <p className="max-w-md text-muted-foreground font-medium leading-relaxed border-l-2 border-foreground/10 dark:border-white/10 pl-8">
               Chúng tôi cung cấp hệ sinh thái sản phẩm quảng cáo và thi công toàn diện, kết hợp giữa kỹ thuật gia công chính xác và tư duy sáng tạo nghệ thuật.
             </p>
           </div>
@@ -99,12 +99,12 @@ export const Products = () => {
 
               {/* Product Code Label */}
               <div className="absolute top-8 left-8 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-all">
+                <div className="w-10 h-10 rounded-xl bg-background/80 dark:bg-white/5 backdrop-blur-md border border-foreground/10 dark:border-white/10 flex items-center justify-center text-cyan-600 dark:text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-all">
                   {item.icon}
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 font-mono tracking-widest uppercase">{item.code}</span>
-                  <span className="text-xs text-white font-bold tracking-widest uppercase">{item.category}</span>
+                  <span className="text-[10px] text-foreground/40 dark:text-white/40 font-mono tracking-widest uppercase">{item.code}</span>
+                  <span className="text-xs text-foreground dark:text-white font-bold tracking-widest uppercase">{item.category}</span>
                 </div>
               </div>
 
@@ -141,10 +141,10 @@ export const Products = () => {
         >
           <a
             href="#contact"
-            className="group flex items-center gap-4 bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 px-10 py-5 rounded-full text-white font-black transition-all hover:scale-105"
+            className="group flex items-center gap-4 bg-foreground/5 dark:bg-white/5 hover:bg-foreground/10 dark:hover:bg-white/10 backdrop-blur-md border border-foreground/10 dark:border-white/10 px-10 py-5 rounded-full text-foreground dark:text-white font-black transition-all hover:scale-105"
           >
             <span className="uppercase tracking-[0.2em] text-xs">Xem chi tiết danh mục</span>
-            <div className="p-2 bg-cyan-500 rounded-full text-black group-hover:rotate-45 transition-transform">
+            <div className="p-2 bg-cyan-600 dark:bg-cyan-500 rounded-full text-white dark:text-black group-hover:rotate-45 transition-transform">
               <ArrowUpRight size={18} />
             </div>
           </a>

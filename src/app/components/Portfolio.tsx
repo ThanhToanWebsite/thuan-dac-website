@@ -59,6 +59,10 @@ export const Portfolio = () => {
   return (
     <section id="portfolio" className="py-32 bg-background relative border-t border-white/5">
       {/* Background decoration */}
+      <div className="absolute top-35 right-0 text-[10rem] md:text-[15rem] font-black text-foreground/[0.03] dark:text-white/[0.02] select-none pointer-events-none leading-none -translate-y-1/4 uppercase">
+        THUẬN ĐẮC
+      </div>
+
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">

@@ -34,10 +34,11 @@ export const Footer = () => {
 
             <div className="flex gap-4">
               {[
-                { icon: <Facebook size={18} />, href: "https://facebook.com", label: "FB" },
-                { icon: <MessageCircle size={18} />, href: "https://m.me/yourpage", label: "MSG" },
-                { icon: <MapPin size={18} />, href: "https://maps.app.goo.gl/cz1etWP9rdgK94Ys9", label: "MAP" },
-                { icon: <Phone size={18} />, href: "tel:0945142345", label: "TEL" }
+                { icon: <Facebook size={18} />, href: "https://facebook.com", label: "Facebook" },
+                { icon: <MessageCircle size={18} />, href: "https://m.me/yourpage", label: "Messager" },
+                { icon: "Zalo", href: "https://zalo.me/0945142345", label: "Chat Zalo" },
+                { icon: <MapPin size={18} />, href: "https://maps.app.goo.gl/cz1etWP9rdgK94Ys9", label: "Google Maps" },
+                { icon: <Phone size={18} />, href: "tel:0945142345", label: "Gọi Ngay" }
               ].map((social, i) => (
                 <a
                   key={i}

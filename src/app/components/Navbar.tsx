@@ -30,7 +30,7 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Trang chủ", href: "#" },
+    //{ name: "Trang chủ", href: "#" },
     { name: "Giới thiệu", href: "#about" },
     {
       name: "Sản Phẩm",
@@ -85,6 +85,11 @@ export const Navbar = () => {
           href: "#service-mechanical",
         },
       ],
+    },
+    {
+      name: "Dự Án",
+      href: "#portfolio",
+      icon: <Hammer size={16} />,
     },
     {
       name: "Tin Tức",

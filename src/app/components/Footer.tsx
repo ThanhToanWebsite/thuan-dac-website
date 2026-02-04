@@ -23,7 +23,7 @@ export const Footer = () => {
                   THUẬN ĐẮC
                 </span>
                 <span className="text-[10px] font-mono tracking-[0.4em] text-cyan-400 font-bold">
-                  QUẢNG CÁO CHÍNH XÁC
+                  QUẢNG CÁO & NỘI THẤT
                 </span>
               </div>
             </div>
